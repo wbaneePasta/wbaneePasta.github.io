@@ -23,7 +23,7 @@ function generateQuote() {
     `;
 	if (randomNametag === 'xGINTINGSx') {
         const image = document.createElement('img');
-        image.src = 'img/KEKAlmost.png'; // Add the path to your image
+        image.src = 'img/KEKAlmost.png';
         image.classList.add('easter-egg-image');
         quoteDisplay.querySelector('.quote').appendChild(image);
     }

@@ -44,7 +44,7 @@ body {
 }
 
 .highlight {
-    color: #FFD837; /* Adjust the color as needed */
+    color: #FFD837;
     font-weight: bold;
 }
 
@@ -106,11 +106,52 @@ span {
   line-height: 20px;
 }
 
+
+
+/* Styles for desktop screens */
+@media screen and (min-width: 961px) {
+    .container {
+        margin-top: 20vh;
+    }
+
+    #quoteDisplay {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 150px;
+        padding: 0 5%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .quote {
+        text-align: left;
+    }
+}
+
+/* Styles for phone screens */
 @media screen and (max-width: 960px) {
+    .container {
+        margin-top: 5vh;
+    }
+
+    #quoteDisplay {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 50px;
+        padding: 0 5%;
+    }
+
+	.minus-one {
+		font-size: 2em;
+	}
+
     .title {
         font-size: 1.5em;
     }
-	#quoteDisplay {
-		font-size: 1.2em;
-}
+
+    .quote {
+        text-align: center;
+    }
 }
