@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18181b;
+    color: #fff;
+    text-align: center;
+	overflow: hidden;
+}
+
+.container {
+    margin-top: 20vh;
+}
+
+#quoteDisplay {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 150px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.quote-line {
+    display: flex;
+    align-items: center;
+}
+
+.nametag {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 10px;
+	text-shadow: 2px 2px 5px black;
+}
+
+.quote {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.highlight {
+    color: #FFD837; /* Adjust the color as needed */
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 1em;
+	font-weight: bold;
+    background-color: #9147ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+	border-radius: 10px;
+}
+
+button:hover {
+    background-color: #772ce8;
+}
+
+span {
+    font-weight: bold;
+}
+
+.minus-one {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    color: red;
+    animation: flyAway 1s linear forwards;
+}
+
+@keyframes flyAway {
+    0% { transform: translate(-50%, -50%) rotate(0deg) scale(2) translateY(0); opacity: 1; }
+    100% { transform: translate(-50%, -50%) rotate(360deg) scale(2) translateY(-${randomDistance}px); opacity: 0; }
+}
+
+.easter-egg-image {
+    display: inline-block;
+    width: 1.8em; /* Adjust the size as needed */
+    height: 1.8em; /* Adjust the size as needed */
+    margin-left: 10px; /* Adjust the spacing as needed */
+    vertical-align: middle;
+}
+
+.footer {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+  color: var(--text-color);
+  line-height: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .title {
+        font-size: 1.5em;
+    }
+	#quoteDisplay {
+		font-size: 1.2em;
+}
+}
